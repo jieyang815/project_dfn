@@ -2,7 +2,7 @@
 Segment and reconstruct fiber networks from 2-photon microscopy images.
 
 ## Data
-Image data are saved under "Image" 
+Image data are saved under Image folder: 
 - Original image ("SingleImage....tif")
 - Sample data used for reconstruction (5 regions of interests and corresponding ground truth)
 - A simple macro for ImageJ used for manual segmentation ("MeasureAndGetCoor")
@@ -18,7 +18,7 @@ All code is written in MATLAB. The following toolboxes are required:
 
 ### Main scripts
 
-`main_optimize.m`: main algorithm performs fiber segmentation and parameter optimization based on bi-directional evaluation
+`main_optimize.m`: main algorithm performs fiber segmentation and parameter optimization based on bi-directional evaluation.
 
 `geoPreprocess.m`: preprocess the geometry of the reconstructed fiber network before discretization
 
