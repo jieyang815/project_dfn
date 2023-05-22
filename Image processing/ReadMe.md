@@ -1,8 +1,7 @@
 # Image processing
-
 ---
 
-### Data
+## Data
 ---
 
 - **Images**:
@@ -10,22 +9,23 @@
     - Original image ("SingleImage....tif")
     - Sample data used for reconstruction (5 regions of interests and corresponding ground truth)
     - A simple macro for ImageJ used for manual segmentation ("MeasureAndGetCoor")
+    
+
+## Code
 ---
 
-### Code
+### MATLAB Toolboxes
 ---
-## MATLAB Toolboxes
----
-All code is written in MATLAB -- the following toolboxes are required:
+All code is written in MATLAB. The following toolboxes are required:
 - The Computer Vision Toolbox
 - Image Processing Toolbox
 
-## Main scripts
+### Main scripts
 ---
-a) `main_optimize.m`: main algorithm performs fiber segmentation and parameter optimization based on bi-directional evaluation
-b) `geoPreprocess.m`: preprocess the geometry of the reconstructed fiber network before discretization
+- `main_optimize.m`: main algorithm performs fiber segmentation and parameter optimization based on bi-directional evaluation
+-  `geoPreprocess.m`: preprocess the geometry of the reconstructed fiber network before discretization
 
-## Self-defined functions
+### Self-defined functions
 ---
 - `FiberSeg.m`: segment fiber network from the images with preprocessing, fiber detection, and postprocessing.
 - `NetworkDetection.m`: detect nodes and trace fibers along centerlines using DFS.
@@ -33,9 +33,11 @@ b) `geoPreprocess.m`: preprocess the geometry of the reconstructed fiber network
 - `getMetric.m`: calculate the evaluation metrics based on Mayerich's method.
 - `myDetectHarrisFeatures`: self-defined function to detect nodes using Harris corner detection (makes some small changes based on the original in-built function).
 
-### Procedure
+
+## Procedure
 ---
-## Reconstruct fiber network
+
+### Reconstruct fiber network
 ---
 1. Open `main_optimize.m`, and then run the algorithm.
 2. Select the folder with images at the pop-up window (Images of 5 regions of interests are saved in "Sample data").
@@ -45,7 +47,7 @@ b) `geoPreprocess.m`: preprocess the geometry of the reconstructed fiber network
 
 (Note: the parameter optimization results are saved in "Optimization" for review. And the geometry of reconstructed fiber network is saved in "data_reNetwork")
 
-## Preprocess the geometry of fiber network
+### Preprocess the geometry of fiber network
 ---
 1. Open `geoPreprocess.m`, and then run the algorithm.
 2. Select the folder with the geometry of reconstructed network, and then select the folder to save the preprocessed geometry.
