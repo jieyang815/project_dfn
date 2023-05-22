@@ -22,11 +22,11 @@ All code is written in MATLAB. The following toolboxes are required:
 
 ### Self-defined functions
 
-`FiberSeg.m`: segment fiber network from the images with preprocessing, fiber detection, and postprocessing. \n
-`NetworkDetection.m`: detect nodes and trace fibers along centerlines using DFS.
-`FiberConnect.m`: postprocess the fiber detection results to connect broken fibers.
+`FiberSeg.m`: segment fiber network from the images with preprocessing, fiber detection, and postprocessing
+`NetworkDetection.m`: detect nodes and trace fibers along centerlines using DFS
+`FiberConnect.m`: postprocess the fiber detection results to connect broken fibers
 `getMetric.m`: calculate the evaluation metrics based on Mayerich's method.
-`myDetectHarrisFeatures`: self-defined function to detect nodes using Harris corner detection (makes some small changes based on the original in-built function).
+`myDetectHarrisFeatures`: self-defined function to detect nodes using Harris corner detection (makes some small changes based on the original in-built function)
 
 
 ## Procedure
