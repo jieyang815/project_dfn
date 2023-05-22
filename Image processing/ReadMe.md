@@ -18,14 +18,19 @@ All code is written in MATLAB. The following toolboxes are required:
 ### Main scripts
 
 `main_optimize.m`: main algorithm performs fiber segmentation and parameter optimization based on bi-directional evaluation
+
 `geoPreprocess.m`: preprocess the geometry of the reconstructed fiber network before discretization
 
 ### Self-defined functions
 
 `FiberSeg.m`: segment fiber network from the images with preprocessing, fiber detection, and postprocessing
+
 `NetworkDetection.m`: detect nodes and trace fibers along centerlines using DFS
+
 `FiberConnect.m`: postprocess the fiber detection results to connect broken fibers
+
 `getMetric.m`: calculate the evaluation metrics based on Mayerich's method.
+
 `myDetectHarrisFeatures`: self-defined function to detect nodes using Harris corner detection (makes some small changes based on the original in-built function)
 
 
