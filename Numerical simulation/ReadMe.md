@@ -1,30 +1,23 @@
 # Numerical simulation
+Import the geometry of discrete fiber networks to Abaqus, and analyze their mechanical behaviors.
 
----
+## Data
+Simulation results are saved in Abaqus folder:
+- "DFN_output" is the simulation data of the reconstructed discrete fiber network (DFN).
+- "HGO output" is the data of the homogenized fiber network using Holzapfel-Gasser-Ogden model (HGO).
 
-## Subfolders
+### Main scripts
 
-- **Abaqus**: simulation results exported from Abaqus, "DFN_output" is the reconstructed discrete fiber network, and "HGO output" is the homogenized fiber network using Holzapfel-Gasser-Ogden model.
+`myNetworkSim.m`: discretize the geometry of the fiber network and create Abaqus input file.
 
-- **MATLAB code**: consists of two main algorithms and a self-defined function.
+`SimPostprocess.m`: postprocess the simulation results to plot stress-strain curve for analysis.
 
----
+### Self-defined functions
 
-### Main algorithm
+`createBeamMesh.m`: discretize the fiber segments into equi-distant elements and define the boundary condition.
 
-a) `myNetworkSim.m`: discretize the geometry of the fiber network and create Abaqus input file.
-
-b) `SimPostprocess.m`: postprocess the simulation results to plot stress-strain curve for analysis.
-
----
-
-### Self-defined function
-
-- `createBeamMesh.m`: discretize the fiber segments into equi-distant elements and define the boundary condition.
-
----
-
-## Procedure for discretization
+## Proccedure
+### Discretization of the geometry and create Abaqus input file
 
 1. Open `myNetworkSim.m`, and then run the algorithm.
 2. Select the folder with the preprocessed geometry of the fiber network at the pop-up window, and then select the folder to save the Abaqus input file.
@@ -32,9 +25,7 @@ b) `SimPostprocess.m`: postprocess the simulation results to plot stress-strain 
 3. After the discretization is completed, an Abaqus input file will be created. And also the initial coordinate of the boundary node set will be saved.
 (Note: the Abaqus input files of the discrete fiber network are saved in "Input_fiber" for review)
 
----
-
-## Procedure for postprocessing
+### Postprocessing of the simulation results
 
 1. Open `SimPostprocess.m`, and then run the algorithm.
 2. Select the folders of the simulation results subsequently according to the command of the pop-up window.
