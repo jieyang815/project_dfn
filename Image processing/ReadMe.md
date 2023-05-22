@@ -5,9 +5,9 @@
 ## Subfolders
 
 - **Images**:
-    1. Original image ("SingleImage....tif")
-    2. Sample data used for reconstruction (5 regions of interests and corresponding ground truth)
-    3. A simple macro for ImageJ used for manual segmentation ("MeasureAndGetCoor")
+    - Original image ("SingleImage....tif")
+    - Sample data used for reconstruction (5 regions of interests and corresponding ground truth)
+    - A simple macro for ImageJ used for manual segmentation ("MeasureAndGetCoor")
 
 - **MATLAB code**: consists of two main algorithms and self-defined functions
 
