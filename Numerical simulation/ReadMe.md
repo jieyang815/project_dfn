@@ -17,7 +17,7 @@ Simulation results are saved in Abaqus folder:
 `createBeamMesh.m`: discretize the fiber segments into equi-distant elements and define the boundary condition.
 
 ## Proccedure
-### Discretization of the geometry and create Abaqus input file
+### Discretize the geometry and create Abaqus input file
 
 1. Open `myNetworkSim.m`, and then run the algorithm.
 
