@@ -1,4 +1,5 @@
 # Image processing
+Segment and reconstruct fiber networks from 2-photon microscopy images.
 
 ## Data
 Image data are saved under "Image" 
